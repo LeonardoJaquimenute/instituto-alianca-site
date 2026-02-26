@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instituto Aliança — Projetos Sociais e Doações</title>
+  <meta name="description" content="Apoie os projetos do Instituto Aliança. Doação via WhatsApp e informações para empresas destinarem IR (FMDCA/FIA)." />
+  <meta name="theme-color" content="#24354e" />
+
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <meta property="og:title" content="Instituto Aliança — Doe e apoie projetos" />
+  <meta property="og:description" content="Doe via WhatsApp e ajude a transformar vidas. Veja projetos, transparência e parcerias." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Voltar ao topo">
+        <img class="brand__logo" src="assets/logo.png" alt="Instituto Aliança" />
+        <span class="brand__name">Instituto Aliança</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+
+        <div class="nav__menu" id="navMenu">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#empresas">Empresas</a>
+          <a href="#parceiros">Parceiros</a>
+          <a href="#transparencia">Transparência</a>
+          <a href="#contato">Contato</a>
+          <a class="btn btn--primary" href="#como-doar">Quero doar</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">OSC • Projetos sociais • Manaus/AM</p>
+          <h1>Doações que viram impacto: educação, esporte e inclusão.</h1>
+          <p class="lead">
+            O Instituto Aliança desenvolve ações socioeducativas, esportivas e de inclusão para crianças,
+            adolescentes e famílias. Doe agora via WhatsApp! Se você representa uma empresa, veja como
+            apoiar com incentivo fiscal.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#como-doar">Doar agora</a>
+            <a class="btn btn--ghost" href="#empresas">Sou empresa</a>
+          </div>
+
+          <div class="trustRow" aria-label="Sinais de confiança">
+            <div class="trustPill"> Atendimento rápido via WhatsApp</div>
+            <div class="trustPill"> Documentos e transparência</div>
+            <div class="trustPill"> Parcerias e patrocínios</div>
+          </div>
+        </div>
+
+        <div class="hero__imageWrap" aria-label="Imagem de ações do Instituto">
+          <img class="hero__image" src="assets/imgs/hero.webp" alt="Encontro comunitário e ações do Instituto Aliança" loading="lazy" />
+          <a href="#projetos" class="hero__imageTag" aria-label="Ver projetos">
+            <strong>Impacto real</strong>
+            <span>Veja nossos projetos em ação</span>
+          </a>
+        </div>
+
+        <div class="hero__card" role="region" aria-label="Doação via WhatsApp">
+          <h2>Doação rápida via WhatsApp</h2>
+          <p>Escolha o projeto e (se quiser) o valor. A mensagem vai pronta para você enviar.</p>
+
+          <div class="donation-box">
+            <label for="amount">Valor sugerido (opcional)</label>
+            <div class="donation-box__row">
+              <span class="currency">R$</span>
+              <input id="amount" type="number" min="1" step="1" placeholder="Ex.: 30" inputmode="numeric" />
+            </div>
+
+            <label for="project">Projeto (opcional)</label>
+            <select id="project">
+              <option value="">Quero ajudar o Instituto (geral)</option>
+              <option value="Movimentando Sonhos">Movimentando Sonhos</option>
+              <option value="Impactando na Luta">Impactando na Luta</option>
+              <option value="Treinamento TEA">Treinamento TEA</option>
+            </select>
+
+            <a class="btn btn--whatsapp" id="ctaWhatsappCard" href="#" rel="noopener">Doar pelo WhatsApp</a>
+            <p class="small">Prefere falar direto? Clique e envie.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <h2>Sobre o Instituto</h2>
+          <p>Quem somos, o que fazemos e como a sua doação chega na ponta.</p>
+        </div>
+
+        <div class="about">
+          <div class="about__text">
+            <p>
+              O <strong>Instituto Aliança</strong> é uma Organização da Sociedade Civil (OSC) com atuação em Manaus-AM,
+              desenvolvendo ações de <strong>proteção social</strong>, <strong>educação</strong>, <strong>esporte</strong> e
+              <strong>inclusão</strong>. Trabalhamos para ampliar oportunidades e fortalecer a comunidade, com foco em
+              crianças, adolescentes e famílias em situação de vulnerabilidade.
+            </p>
+
+            <div class="about__highlights">
+              <div class="highlight">
+                <h3>Missão</h3>
+                <p>Promover desenvolvimento e garantia de direitos por meio de ações socioeducativas, esportivas e inclusivas.</p>
+              </div>
+              <div class="highlight">
+                <h3>Como usamos doações</h3>
+                <p>Materiais, logística, atividades, apoio às famílias e ampliação do atendimento.</p>
+              </div>
+              <div class="highlight">
+                <h3>Compromisso</h3>
+                <p>Transparência, respeito, inclusão e impacto mensurável nas ações.</p>
+              </div>
+            </div>
+
+            <div class="mediaCard">
+              <img src="assets/imgs/doacao.webp" alt="Ação de entrega e apoio a famílias" loading="lazy" />
+              <div>
+                <h3>Doação com resultado</h3>
+                <p class="muted">
+                  Toda contribuição ajuda a manter ações ativas e ampliar o alcance.
+                  Se você é empresa, também podemos orientar apoio via incentivo fiscal.
+                </p>
+                <div class="mediaCard__cta">
+                  <a class="btn btn--primary" href="#como-doar">Quero ajudar</a>
+                  <a class="btn btn--ghost" href="#transparencia">Ver documentos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__card">
+            <h3>Doação em 1 minuto</h3>
+            <ul class="bullets">
+              <li>Escolha um projeto (ou doação geral)</li>
+              <li>Envie mensagem no WhatsApp</li>
+              <li>Receba orientação e confirme</li>
+            </ul>
+            <a class="btn btn--whatsapp" id="ctaWhatsappSide" href="#" rel="noopener">Doar pelo WhatsApp</a>
+
+            <div class="divider"></div>
+
+            <h4 class="subtle">Materiais para empresas</h4>
+            <p class="muted small">Baixe os documentos e apresente internamente.</p>
+            <a class="link" href="assets/docs/PROJETO_DE_CHANCELA__ALIANCA_assinado.pdf" target="_blank" rel="noopener">
+              Baixar Plano de Trabalho - (PDF) →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projetos e Treinamentos</h2>
+          <p>Conheça as iniciativas e escolha onde quer causar impacto.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <img class="card__img" src="assets/imgs/movimentando.webp" alt="Projeto Movimentando Sonhos" loading="lazy" />
+            <div class="card__top">
+              <h3>Movimentando Sonhos</h3>
+              <span class="tag">Crianças e adolescentes</span>
+            </div>
+            <p>
+              Projeto de proteção social com ações socioeducativas e esportivas para crianças e adolescentes.
+              Voltado ao fortalecimento de vínculos, desenvolvimento e inclusão.
+            </p>
+
+            <div class="card__meta">
+              <a class="miniLink" href="assets/docs/PROJETO_DE_CHANCELA__ALIANCA_assinado.pdf" target="_blank" rel="noopener">Documento (PDF)</a>
+              <span class="dot">•</span>
+              <span class="miniText">Incentivo fiscal (FMDCA)</span>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#como-doar" data-project="Movimentando Sonhos">Apoiar</a>
+              <a class="btn btn--ghost" href="#empresas">Como empresas podem apoiar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/imgs/impactando.webp" alt="Projeto Impactando na Luta" loading="lazy" />
+            <div class="card__top">
+              <h3>Impactando na Luta</h3>
+              <span class="tag">Jiu-jitsu + cidadania</span>
+            </div>
+            <p>
+              Aulas gratuitas de Jiu-Jitsu e formação de valores, com foco em disciplina, permanência escolar e
+              oportunidades para crianças e adolescentes.
+            </p>
+
+            <div class="card__meta">
+              <a class="miniLink" href="assets/docs/PROJETO_IMPACTANDO_NA_LUTA..pdf" target="_blank" rel="noopener">Documento (PDF)</a>
+              <span class="dot">•</span>
+              <span class="miniText">Apoio mensal ou anual</span>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#como-doar" data-project="Impactando na Luta">Apoiar</a>
+              <a class="btn btn--ghost" href="#contato">Patrocinar turma</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="assets/imgs/tea2.webp" alt="Treinamento TEA" loading="lazy" />
+            <div class="card__top">
+              <h3>Treinamento TEA</h3>
+              <span class="tag">Inclusão e acolhimento</span>
+            </div>
+            <p>
+              Capacitação para equipes e instituições sobre inclusão, sensibilização e acolhimento de pessoas autistas.
+              Ideal para empresas e órgãos públicos.
+            </p>
+
+            <div class="card__meta">
+              <a class="miniLink" href="assets/docs/APRESENTAC_A_O_TREINAMENTO_TEA.pdf" target="_blank" rel="noopener">Apresentação (PDF)</a>
+              <span class="dot">•</span>
+              <span class="miniText">Treinamento in-company</span>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--primary" href="#contato">Solicitar proposta</a>
+              <a class="btn btn--ghost" href="#parceiros">Ver parceiros</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como doar -->
+    <section class="section section--alt" id="como-doar">
+      <div class="container">
+        <div class="section__head">
+          <h2>Como doar</h2>
+          <p>Simples, rápido e com acompanhamento.</p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <strong>Escolha o projeto</strong>
+            <span>Selecione um projeto ou doe para o Instituto (geral).</span>
+          </li>
+          <li>
+            <strong>Fale no WhatsApp</strong>
+            <span>Confirmamos os dados e orientamos o envio com segurança.</span>
+          </li>
+          <li>
+            <strong>Receba confirmação</strong>
+            <span>Você recebe confirmação e registro do apoio (quando aplicável).</span>
+          </li>
+        </ol>
+
+        <div class="cta-row">
+          <a class="btn btn--whatsapp" id="ctaWhatsappSection" href="#" rel="noopener">Quero doar pelo WhatsApp</a>
+          <p class="small">Se você é empresa, role para a seção <a class="link" href="#empresas">Empresas</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Empresas -->
+    <section class="section" id="empresas">
+      <div class="container">
+        <div class="section__head">
+          <h2>Para empresas</h2>
+          <p>Apresente internamente e apoie com patrocínio, doação recorrente ou incentivo fiscal.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="panel">
+            <h3>Incentivo fiscal (FMDCA/FIA)</h3>
+            <p>
+              Empresas podem apoiar projetos voltados a crianças e adolescentes via destinação para o Fundo
+              (conforme legislação e regras locais). Nós orientamos o passo a passo e enviamos toda a documentação.
+            </p>
+
+            <ul class="list">
+              <li> Projeto e plano de trabalho disponíveis</li>
+              <li> Material para apresentação interna</li>
+              <li> Atendimento e acompanhamento</li>
+            </ul>
+
+            <div class="panel__cta">
+              <a class="btn btn--primary" href="assets/docs/PROJETO_DE_CHANCELA__ALIANCA_assinado.pdf" target="_blank" rel="noopener">Baixar Plano (PDF)</a>
+              <a class="btn btn--whatsapp" id="ctaWhatsappEmpresa" href="#" rel="noopener">Falar com captação</a>
+            </div>
+
+            <p class="small muted">
+              Observação: as regras e limites de destinação variam. Sempre consulte seu contador.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Patrocínio e impacto</h3>
+            <p>
+              Além de doações, oferecemos contrapartidas de visibilidade (quando aplicável) e relatórios de impacto
+              para que sua empresa acompanhe resultados.
+            </p>
+
+            <div class="kpis">
+              <div class="kpi">
+                <strong>Relatórios</strong>
+                <span class="muted">PDFs e registros</span>
+              </div>
+              <div class="kpi">
+                <strong>Transparência</strong>
+                <span class="muted">materiais públicos</span>
+              </div>
+              <div class="kpi">
+                <strong>Parcerias</strong>
+                <span class="muted">apoio institucional</span>
+              </div>
+            </div>
+
+            <a class="btn btn--ghost" href="#transparencia">Ver transparência</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parceiros -->
+    <section class="section section--alt" id="parceiros">
+      <div class="container">
+        <div class="section__head">
+          <h2>Parceiros</h2>
+          <p>Instituições que caminham com a gente e fortalecem nossos projetos.</p>
+        </div>
+
+        <div class="partners">
+          <div class="partnerCard">
+            <img src="assets/partners-abrinq.png" alt="Fundação Abrinq" loading="lazy" />
+            <p>Fundação Abrinq</p>
+          </div>
+          
+          <div class="partnerCard">
+            <img src="assets/imgs/cmas.jpg" alt="Fundação CMAS" loading="lazy" />
+            <p>Conselho Municipal de Assistência Social</p>
+          </div>
+          
+          <div class="partnerCard">
+            <img src="assets/imgs/carrossel.jpg" alt="Escola Carrossel Evolucao" loading="lazy" />
+            <p>Escola Carrossel Evolução</p>
+          </div>
+
+          <div class="partnerCard">
+            <div class="partnerCard__placeholder">Sua marca aqui</div>
+            <p>Seja um parceiro</p>
+          </div>
+        </div>
+
+        <div class="ctaCenter">
+          <a class="btn btn--whatsapp" id="ctaWhatsappParceiro" href="#" rel="noopener">Quero ser parceiro</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparência -->
+    <section class="section" id="transparencia">
+      <div class="container">
+        <div class="section__head">
+          <h2>Transparência</h2>
+          <p>Documentos, materiais de projeto e apresentações.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="panel">
+            <h3>Documentos</h3>
+            <ul class="list">
+              <li>
+                <a class="link" href="assets/docs/PROJETO_DE_CHANCELA__ALIANCA_assinado.pdf" target="_blank" rel="noopener">
+                  Projeto Movimentando Sonhos — Plano de Trabalho (PDF) →
+                </a>
+              </li>
+              <li>
+                <a class="link" href="assets/docs/PROJETO_IMPACTANDO_NA_LUTA..pdf" target="_blank" rel="noopener">
+                  Projeto Impactando na Luta (PDF) →
+                </a>
+              </li>
+              <li>
+                <a class="link" href="assets/docs/APRESENTAC_A_O_TREINAMENTO_TEA.pdf" target="_blank" rel="noopener">
+                  Treinamento TEA — Apresentação (PDF) →
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Fale com a equipe</h3>
+            <p>Quer doar, patrocinar um projeto, ou solicitar treinamento? Chame no WhatsApp.</p>
+            <a class="btn btn--whatsapp" id="ctaWhatsappFooterTop" href="#" rel="noopener">Atendimento no WhatsApp</a>
+
+            <div class="divider"></div>
+
+            <p class="muted small">
+              Queremos deixar tudo simples: você escolhe como apoiar, e nós orientamos com rapidez e transparência.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section section--alt" id="contato">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contato</h2>
+          <p>Fale com a gente — será um prazer te atender.</p>
+        </div>
+
+        <div class="contact contact--icons">
+          <a class="contactCard" id="contactWhatsapp" href="#" rel="noopener">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="22" height="22">
+                <path d="M19.11 17.25c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.4-1.68-1.57-1.96-.17-.28-.02-.43.13-.57.13-.13.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35-.26.28-1 0.98-1 2.39 0 1.4 1.03 2.76 1.17 2.95.14.19 2.03 3.1 4.92 4.34.69.3 1.23.47 1.65.6.69.22 1.32.19 1.82.12.56-.08 1.66-.68 1.9-1.33.24-.66.24-1.22.17-1.33-.07-.12-.26-.19-.54-.33z" fill="currentColor"/>
+                <path d="M16.03 5.33c-5.9 0-10.7 4.8-10.7 10.7 0 1.89.5 3.74 1.45 5.37L5.2 26.67l5.43-1.54c1.58.86 3.37 1.31 5.2 1.31 5.9 0 10.7-4.8 10.7-10.7 0-5.9-4.8-10.71-10.5-10.71zm0 19.29c-1.62 0-3.21-.44-4.6-1.27l-.33-.2-3.22.91.86-3.14-.22-.32c-.95-1.43-1.45-3.1-1.45-4.85 0-4.9 3.99-8.9 8.9-8.9 4.9 0 8.9 4 8.9 8.9 0 4.9-4 8.87-8.84 8.87z" fill="currentColor"/>
+              </svg>
+            </span>
+            <div class="contactCard__text">
+              <h3>WhatsApp</h3>
+              <p>Doações, parcerias e atendimentos</p>
+            </div>
+          </a>
+
+          <a class="contactCard" id="contactInstagram" href="#" target="_blank" rel="noopener">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 2A1.8 1.8 0 1 0 13.8 12 1.8 1.8 0 0 0 12 10.2zM17.6 6.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" fill="currentColor"/>
+              </svg>
+            </span>
+            <div class="contactCard__text">
+              <h3>Instagram</h3>
+              <p>Acompanhe as ações</p>
+            </div>
+          </a>
+
+          <a class="contactCard" href="mailto:Inst.aliancaam@gmail.com">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z" fill="currentColor"/>
+              </svg>
+            </span>
+            <div class="contactCard__text">
+              <h3>Email</h3>
+              <p class="email">Inst.aliancaam@gmail.com</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer--rich">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <div class="footerBrand">
+            <img src="assets/logo.png" alt="Instituto Aliança" />
+            <div>
+              <strong>Instituto Aliança</strong>
+              <p class="muted">OSC • Projetos sociais • Transparência</p>
+            </div>
+          </div>
+
+          <p class="muted">
+            Fortalecemos iniciativas que geram impacto real. Sua doação mantém projetos ativos e amplia nosso alcance.
+          </p>
+
+          <div class="footer__social">
+            <a id="footerWhatsapp" class="socialBtn" href="#" aria-label="WhatsApp" rel="noopener">
+              <svg viewBox="0 0 32 32" width="18" height="18">
+                <path d="M19.11 17.25c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.4-1.68-1.57-1.96-.17-.28-.02-.43.13-.57.13-.13.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35-.26.28-1 0.98-1 2.39 0 1.4 1.03 2.76 1.17 2.95.14.19 2.03 3.1 4.92 4.34.69.3 1.23.47 1.65.6.69.22 1.32.19 1.82.12.56-.08 1.66-.68 1.9-1.33.24-.66.24-1.22.17-1.33-.07-.12-.26-.19-.54-.33z" fill="currentColor"/>
+                <path d="M16.03 5.33c-5.9 0-10.7 4.8-10.7 10.7 0 1.89.5 3.74 1.45 5.37L5.2 26.67l5.43-1.54c1.58.86 3.37 1.31 5.2 1.31 5.9 0 10.7-4.8 10.7-10.7 0-5.9-4.8-10.71-10.5-10.71zm0 19.29c-1.62 0-3.21-.44-4.6-1.27l-.33-.2-3.22.91.86-3.14-.22-.32c-.95-1.43-1.45-3.1-1.45-4.85 0-4.9 3.99-8.9 8.9-8.9 4.9 0 8.9 4 8.9 8.9 0 4.9-4 8.87-8.84 8.87z" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <a id="footerInstagram" class="socialBtn" href="#" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 2A1.8 1.8 0 1 0 13.8 12 1.8 1.8 0 0 0 12 10.2zM17.6 6.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Instituto</h4>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#parceiros">Parceiros</a>
+          <a href="#transparencia">Transparência</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Doações</h4>
+          <a href="#como-doar">Como doar</a>
+          <a href="#empresas">Sou empresa</a>
+          <a id="ctaWhatsappFooter" href="#" rel="noopener">Doar agora</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contato</h4>
+          <span class="muted">WhatsApp</span>
+          <a id="footerWhatsappText" class="break" href="#" rel="noopener">+55 (92) 8280-9430</a>
+          <span class="muted">Email</span>
+          <a class="break" href="mailto:Inst.aliancaam@gmail.com">Inst.aliancaam@gmail.com</a>
+          <span class="muted">Horário</span>
+          <span class="muted">Seg a Sex • 09h às 18h</span>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <p>© <span id="year"></span> Instituto Aliança. Todos os direitos reservados.</p>
+        <div class="footer__bottomLinks">
+          <a class="link" href="#top">Voltar ao topo ↑</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
