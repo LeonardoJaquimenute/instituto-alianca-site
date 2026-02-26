@@ -650,3 +650,65 @@ h1{
   .contact{ grid-template-columns:repeat(3,1fr); }
   .footer__grid{ grid-template-columns:1.4fr 1fr 1fr 1fr; }
 }
+
+/* =========================
+   FIX iOS: select azul e invadindo elementos
+   ========================= */
+
+
+.hero__card,
+.donation-box {
+  position: relative;
+  overflow: visible; 
+}
+
+.donation-box label,
+.donation-box__row,
+.donation-box select,
+#ctaWhatsappCard,
+.donation-box .small {
+  position: relative;
+  z-index: 1;
+}
+
+.donation-box select {
+  margin-bottom: 14px;
+}
+
+.donation-box select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: var(--text);             
+  font-weight: 800;
+  height: 52px;
+  line-height: 52px;
+  padding: 0 44px 0 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  outline: none;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 50%,
+    calc(100% - 12px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.donation-box select:focus {
+  border-color: rgba(36, 53, 78, 0.55);
+  box-shadow: 0 0 0 4px rgba(36, 53, 78, 0.12);
+  color: var(--text);
+}
+
+#ctaWhatsappCard {
+  z-index: 2;
+}
+
+.donation-box select,
+.donation-box input {
+  font-size: 16px;
+}
