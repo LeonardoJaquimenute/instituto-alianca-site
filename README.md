@@ -2,6 +2,8 @@
 
 Aplicação web estática desenvolvida para uma Organização da Sociedade Civil (OSC), com foco em captação de recursos e apresentação institucional.
 
+Disponivel em: https://oscalianca.org
+
 ---
 
 ##  Descrição Técnica
