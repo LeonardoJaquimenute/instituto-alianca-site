@@ -85,13 +85,22 @@
               <input id="amount" type="number" min="1" step="1" placeholder="Ex.: 30" inputmode="numeric" />
             </div>
 
-            <label for="project">Projeto (opcional)</label>
-            <select id="project">
-              <option value="">Quero ajudar o Instituto (geral)</option>
-              <option value="Movimentando Sonhos">Movimentando Sonhos</option>
-              <option value="Impactando na Luta">Impactando na Luta</option>
-              <option value="Treinamento TEA">Treinamento TEA</option>
-            </select>
+          <label for="projectBtn">Projeto (opcional)</label>
+          <div class="dropdown" id="projectDropdown">
+            <button type="button" class="dropdown__btn" id="projectBtn" aria-haspopup="listbox" aria-expanded="false">
+              <span id="projectLabel">Quero ajudar o Instituto (geral)</span>
+              <span class="dropdown__chev" aria-hidden="true">▾</span>
+            </button>
+
+            <ul class="dropdown__list" id="projectList" role="listbox" aria-label="Selecionar projeto">
+              <li class="dropdown__item" role="option" data-value="">Quero ajudar o Instituto (geral)</li>
+              <li class="dropdown__item" role="option" data-value="Movimentando Sonhos">Movimentando Sonhos</li>
+              <li class="dropdown__item" role="option" data-value="Impactando na Luta">Impactando na Luta</li>
+              <li class="dropdown__item" role="option" data-value="Treinamento TEA">Treinamento TEA</li>
+            </ul>
+
+            <input type="hidden" id="project" value="" />
+          </div>
 
             <a class="btn btn--whatsapp" id="ctaWhatsappCard" href="#" rel="noopener">Doar pelo WhatsApp</a>
             <p class="small">Prefere falar direto? Clique e envie.</p>
